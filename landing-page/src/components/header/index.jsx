@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { All, Logo, MenuContent, MenuIcon, MenuStyled, Imagem } from "./style";
+import { MenuStyled, Imagem, MenuIcon } from "./style";
 import facebookLogo from "../../images/facebook.png";
 import instagramLogo from "../../images/instagram.png";
 import menu from "../../images/menu.png";
@@ -15,13 +15,10 @@ function Header() {
   };
 
   return (
-    <All>
-      <Logo>
+   <>
+      <div>
         <h1>UENP</h1>
-      </Logo>
-      <MenuContent>
-        <MenuIcon onClick={toggleMenu} src={menu} width="24px" />
-      </MenuContent>
+      </div>
       <MenuStyled show={show}>
         <li>
           <a href="#us"> A UENP</a>
@@ -41,9 +38,13 @@ function Header() {
           <button onClick={closeMenu}>X</button>
         )}
       </MenuStyled>
+      <div>
+        < MenuIcon onClick={toggleMenu} src={menu} width="24px" />
+      </div>
+   </>
 
 
-    </All>
+
   );
 }
 

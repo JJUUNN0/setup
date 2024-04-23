@@ -9,6 +9,11 @@ function Header() {
   const toggleMenu = () => {
     setShow(!show);
   };
+
+  const closeMenu = () => {
+    setShow(false);
+  };
+
   return (
     <All>
       <Logo>
@@ -32,7 +37,12 @@ function Header() {
         </li>
         <Imagem src={facebookLogo} alt="imagem" />
         <Imagem src={instagramLogo} alt="imagem" />
+        {show && (
+          <button onClick={closeMenu}>X</button>
+        )}
       </MenuStyled>
+
+
     </All>
   );
 }

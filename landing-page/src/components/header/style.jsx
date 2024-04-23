@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { media } from "../../components/styles/media.js";
 
 const All = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #fff;
   background-color: ${({ theme }) => theme.second};
   width: 100%;
@@ -18,20 +21,19 @@ const All = styled.header`
 `;
 
 const Logo = styled.div`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  padding-right: 80%;
+  width: 150px;
+  padding-left: 30px;
 `;
 
 const MenuStyled = styled.ul`
+  flex: 1;
   list-style: none;
   margin: 0;
-  padding: 0 10%;
+  padding: 0;
   overflow: hidden;
-  font-size: 2.6rem;
+  font-size: 1.5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   li {
     margin-right: 16%;
@@ -77,17 +79,22 @@ const MenuContent = styled.div`
   background-color: ${({ theme }) => theme.second};
   overflow: hidden;
   display: none;
-  height: 40vh;
+  height: 1vh;
 
   ${media.desktop`
     display: flex;
     align-items: center;
     position: fixed;
+    justify-content: space-around;
+  `}
+
+  ${media.tablet`
+
   `}
 
   ${media.mobile`
-    display: flex; /* Mostra o MenuContent apenas em telas de celular */
-    align-items: center;
+    display: flex;
+    align-items: end;
   `}
 `;
 
@@ -95,14 +102,15 @@ const MenuIcon = styled.img`
   cursor: pointer;
 
   ${media.desktop`
-    display: none; /* Esconde o MenuIcon em telas de desktop */
   `}
 
   ${media.mobile`
-    display: block; /* Mostra o MenuIcon apenas em telas de celular */
-    position: absolute; /* Define a posição absoluta */
-    top: 25px; /* Alinha o ícone ao topo */
-    right: 30px; /* Alinha o ícone à direita */
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 24px;
+    height: auto;
   `}
 `;
 

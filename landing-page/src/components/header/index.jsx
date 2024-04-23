@@ -16,6 +16,8 @@ function Header() {
 
   return (
    <>
+   <div id="fotoecabecalho" style={{display:'flex', alignItems: 'center'}}>
+
       <div>
         <h1>UENP</h1>
       </div>
@@ -38,6 +40,7 @@ function Header() {
           <button onClick={closeMenu}>X</button>
         )}
       </MenuStyled>
+   </div>
       <div>
         < MenuIcon onClick={toggleMenu} src={menu} width="24px" />
       </div>

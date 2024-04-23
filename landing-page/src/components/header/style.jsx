@@ -6,14 +6,14 @@ const MenuStyled = styled.ul`
   flex: 1;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 20;
   overflow: hidden;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-around;
 
   li {
-    margin-right: 16%;
+    margin-right: 6%;
   }
 
   li:hover {
@@ -22,6 +22,7 @@ const MenuStyled = styled.ul`
   }
 
   ${media.desktop`
+
     display: ${({ show }) => (show ? "block" : "none")};
     position: fixed;
     z-index: 4;
@@ -40,8 +41,15 @@ const MenuStyled = styled.ul`
       cursor: pointer;
       background: ${({ theme }) => theme.primary};
     }
-  `}
+
+
+   `}
+/* @media (max-width: 1460px) and (min-width: 993px) {
+  font-size: 1.5;
+} */
+
 `;
+
 
 const Imagem = styled.img`
   height: 40px;

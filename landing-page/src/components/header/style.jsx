@@ -35,6 +35,7 @@ const MenuStyled = styled.ul`
     left: 45%;
 
 
+
     li {
       width: 100%;
     }
@@ -62,10 +63,10 @@ const Imagem = styled.img`
 
 const MenuIcon = styled.img`
   cursor: pointer;
-  display: none; /* Oculta o menu hamburger em dispositivos que não são móveis */
+  display: none;
 
   ${media.mobile`
-    display: block; /* Exibe o menu hamburger apenas em dispositivos móveis */
+    display: block;
     position: absolute;
     top: 25px;
     right: 20px;
@@ -74,7 +75,7 @@ const MenuIcon = styled.img`
   `}
 
   ${media.tablet`
-    display: block; /* Exibe o menu hamburger apenas em dispositivos móveis */
+    display: block;
     position: absolute;
     top: 25px;
     right: 20px;
@@ -83,4 +84,12 @@ const MenuIcon = styled.img`
   `}
 `;
 
-export {  MenuStyled, Imagem, MenuIcon };
+const CloseButton = styled.button`
+display: none;
+
+${media.desktop`
+  display: ${({ hideOnLargeScreen }) => (hideOnLargeScreen ? "block" : "none")};
+`}
+`;
+
+export {  MenuStyled, Imagem, MenuIcon, CloseButton };

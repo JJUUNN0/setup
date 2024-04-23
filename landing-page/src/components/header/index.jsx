@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MenuStyled, Imagem, MenuIcon } from "./style";
+import { MenuStyled, Imagem, MenuIcon, CloseButton } from "./style";
 import facebookLogo from "../../images/facebook.png";
 import instagramLogo from "../../images/instagram.png";
 import menu from "../../images/menu.png";
@@ -37,8 +37,14 @@ function Header() {
         <Imagem src={facebookLogo} alt="imagem" />
         <Imagem src={instagramLogo} alt="imagem" />
         {show && (
-          <button onClick={closeMenu}>X</button>
-        )}
+  <CloseButton
+    id="x"
+    hideOnLargeScreen
+    onClick={closeMenu}
+  >
+    X
+  </CloseButton>
+)}
       </MenuStyled>
    </div>
       <div>

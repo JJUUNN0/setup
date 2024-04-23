@@ -4,7 +4,7 @@ const Style = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20vh;
+  height: 26.6vh;
   font-size: 40px;
 `;
 

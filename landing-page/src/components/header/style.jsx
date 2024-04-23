@@ -24,14 +24,16 @@ const MenuStyled = styled.ul`
   ${media.desktop`
 
     display: ${({ show }) => (show ? "block" : "none")};
-    position: fixed;
+    position: absolute;
     z-index: 4;
     background: ${({ theme }) => theme.second};
-    top: 40px;
+    top: 25px;
     overflow: hidden;
     height: 100%;
     width: 100%;
     padding: 0;
+    left: 45%;
+
 
     li {
       width: 100%;

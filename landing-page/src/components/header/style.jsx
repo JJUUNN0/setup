@@ -13,6 +13,7 @@ const MenuStyled = styled.ul`
   justify-content: space-around;
 
 
+
   li {
     margin-right: 6%;
   }

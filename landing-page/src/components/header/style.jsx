@@ -6,11 +6,11 @@ const MenuStyled = styled.ul`
   flex: 1;
   list-style: none;
   margin: 0;
-  padding: 20;
   overflow: hidden;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-around;
+  padding-top: 20px;
 
 
 
@@ -28,7 +28,6 @@ const MenuStyled = styled.ul`
     display: ${({ show }) => (show ? "block" : "none")};
     position: absolute;
     z-index: 4;
-    background: ${({ theme }) => theme.second};
     top: 25px;
     overflow: hidden;
     height: 100%;
@@ -61,7 +60,6 @@ const MenuStyled = styled.ul`
 const Imagem = styled.img`
   height: 40px;
   margin-right: 30px;
-  margin-top:10px
 `;
 
 

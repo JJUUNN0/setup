@@ -16,7 +16,11 @@ const Body = ({ title }) => {
 const Title = styled.h1`
   font-size: 40px;
   white-space: pre-line;
-  background-color:  #f0ffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color:#c3e9c5 ;
+  background-image: linear-gradient(to top, #83ecec, #c3e9c5 );
+  opacity: 0.9;
 `;
 
   return (

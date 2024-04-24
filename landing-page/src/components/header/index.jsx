@@ -24,19 +24,23 @@ function Header() {
       </div>
       <MenuStyled show={show}>
         <li>
-          <a href="https://uenp.edu.br/institucional"> A UENP</a>
+          <a href="https://uenp.edu.br/institucional" target="_blank"> A UENP</a>
         </li>
         <li>
-          <a href="https://uenp.edu.br/sobre-graduacao/prograd-cursos-grad"> Cursos</a>
+          <a href="https://uenp.edu.br/sobre-graduacao/prograd-cursos-grad" target="_blank"> Cursos</a>
         </li>
         <li>
-          <a href="https://uenp.edu.br/publicacoes-oficiais-uenp">Publicações</a>
+          <a href="https://uenp.edu.br/publicacoes-oficiais-uenp" target="_blank">Publicações</a>
         </li>
         <li>
-          <a href="https://uenp.edu.br/contato"> Contato</a>
+          <a href="https://uenp.edu.br/contato" target="_blank"> Contato</a>
         </li>
-        <Imagem src={facebookLogo} alt="imagem" />
-        <Imagem src={instagramLogo} alt="imagem" />
+        <a href="https://www.facebook.com/UENP.Oficial/" target="_blank">
+          <Imagem src={facebookLogo} alt="imagem" />
+        </a>
+        <a href="https://www.instagram.com/uenp_oficial/" target="_blank">
+          <Imagem src={instagramLogo} alt="imagem" />
+        </a>
         {show && (
   <CloseButton
     id="x"

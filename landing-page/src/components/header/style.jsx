@@ -12,6 +12,7 @@ const MenuStyled = styled.ul`
   display: flex;
   justify-content: space-around;
 
+
   li {
     margin-right: 6%;
   }
@@ -36,8 +37,10 @@ const MenuStyled = styled.ul`
 
 
 
+
     li {
       width: 100%;
+      margin-top: 10px
     }
 
     li:hover {
@@ -57,6 +60,7 @@ const MenuStyled = styled.ul`
 const Imagem = styled.img`
   height: 40px;
   margin-right: 30px;
+  margin-top:10px
 `;
 
 
@@ -65,6 +69,7 @@ const MenuIcon = styled.img`
   cursor: pointer;
   display: none;
 
+
   ${media.mobile`
     display: block;
     position: absolute;
@@ -72,6 +77,7 @@ const MenuIcon = styled.img`
     right: 20px;
     width: 24px;
     height: auto;
+
   `}
 
   ${media.tablet`
@@ -82,14 +88,36 @@ const MenuIcon = styled.img`
     width: 24px;
     height: auto;
   `}
+
+  ${media.desktop`
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    width: 24px;
+    height: auto;
+  `}
 `;
 
 const CloseButton = styled.button`
-display: none;
+  display: none;
+  border: none;
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.text};
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 
-${media.desktop`
-  display: ${({ hideOnLargeScreen }) => (hideOnLargeScreen ? "block" : "none")};
-`}
+
+  ${media.desktop`
+    display: ${({ hideOnLargeScreen }) => (hideOnLargeScreen ? "block" : "none")};
+    margin-top: 10px
+  `}
+
+  &:hover {
+    background-color: ${({ theme }) => theme.primaryDark};
+  }
 `;
 
 export {  MenuStyled, Imagem, MenuIcon, CloseButton };

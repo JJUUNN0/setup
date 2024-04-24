@@ -11,7 +11,6 @@ const Footer = ({ title }) => {
   );
 }
 
-// Define o tipo da propriedade title como uma string
 Footer.propTypes = {
   title: PropTypes.string.isRequired
 };

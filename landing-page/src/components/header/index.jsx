@@ -15,6 +15,7 @@ function Header() {
   };
 
   return (
+
    <>
    <div id="fotoecabecalho" style={{display:'flex', alignItems: 'center'}}>
 
@@ -23,16 +24,16 @@ function Header() {
       </div>
       <MenuStyled show={show}>
         <li>
-          <a href="#us"> A UENP</a>
+          <a href="https://uenp.edu.br/institucional"> A UENP</a>
         </li>
         <li>
-          <a href="#cursos"> Cursos</a>
+          <a href="https://uenp.edu.br/sobre-graduacao/prograd-cursos-grad"> Cursos</a>
         </li>
         <li>
-          <a href="#programas">Programas</a>
+          <a href="https://uenp.edu.br/publicacoes-oficiais-uenp">Publicações</a>
         </li>
         <li>
-          <a href="#contato"> Contato</a>
+          <a href="https://uenp.edu.br/contato"> Contato</a>
         </li>
         <Imagem src={facebookLogo} alt="imagem" />
         <Imagem src={instagramLogo} alt="imagem" />
@@ -51,7 +52,6 @@ function Header() {
         < MenuIcon onClick={toggleMenu} src={menu} width="24px" />
       </div>
    </>
-
 
 
   );

@@ -10,7 +10,7 @@ function App() {
       <Container>
       <Header/>
       <Body title="Seja Bem Vindo a Universidade Estadual do Norte do Paraná" />
-      <Footer title="footer" />
+      <Footer title="" />
       </Container>
   );
 }
